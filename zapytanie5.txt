@@ -1,0 +1,4 @@
+CREATE VIEW zapytanie5 AS
+SELECT * FROM film 
+where Czas_trwania_min<(SELECT AVG(czas_trwania_min) FROM film);
+
